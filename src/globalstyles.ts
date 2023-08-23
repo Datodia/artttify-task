@@ -14,10 +14,15 @@ const GlobalStyle = createGlobalStyle`
         --bg: #030303;
         --secondaryColor: rgba(255, 255, 255, 0.60);
         --button: rgba(88, 68, 68, 0.30);
+        --qrBg: #E8EBF4;
     }
 
     body{
-        background: radial-gradient(334.11% 100.00% at 50.22% -0.00%, rgba(64, 48, 102, 0.70) 0%, rgba(151, 100, 225, 0.70) 90%);
+        background-image: radial-gradient(334.11% 100.00% at 50.22% -0.00%, rgba(64, 48, 102, 0.70) 0%, rgba(151, 100, 225, 0.70) 90%);
+        background-size: cover;
+        @media screen  and (width > 1300px){
+            background-image: url("/assets/images/Bg.svg");
+        }
     }
 `
 

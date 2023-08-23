@@ -1,18 +1,12 @@
-import './App.css'
-import styled from 'styled-components'
+import MainCard from './components/Main'
 
 function App() {
 
   return (
     <>
-     <h1>hello world</h1>
-     <Text>nika</Text>
+     <MainCard />
     </>
   )
 }
 
 export default App
-
-const Text = styled.h2`
-  color: var(--red);
-`

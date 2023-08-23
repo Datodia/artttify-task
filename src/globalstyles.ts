@@ -24,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
             background-image: url("/assets/images/Bg.svg");
         }
     }
-`
+`;
 
-
-export default GlobalStyle
+export default GlobalStyle;

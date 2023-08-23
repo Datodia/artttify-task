@@ -1,12 +1,11 @@
-import MainCard from './components/Main'
+import MainCard from "./components/Main";
 
 function App() {
-
   return (
     <>
-     <MainCard />
+      <MainCard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Nekst";
-  src: local("Nekst"), url("/assets/fonts/Nekst-Regular.otf") format('opentype');
+  src: local("Nekst"), url("/assets/fonts/Nekst-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: local("Helvetica"), url("/assets/fonts/Helvetica.ttf") format('truetype');
+  src: local("Helvetica"), url("/assets/fonts/Helvetica.ttf") format("truetype");
 }

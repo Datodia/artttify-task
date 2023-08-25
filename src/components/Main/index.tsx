@@ -30,7 +30,7 @@ const MainCard = () => {
           <TxtDiv>
             <HDiv>
               <LogoDiv>
-                <img src="/assets/images/logo.svg" alt="" />
+                <img src="/assets/images/logo.svg" alt="Logo Image" />
               </LogoDiv>
               <HTxt>Swimming Pool</HTxt>
             </HDiv>
@@ -47,14 +47,14 @@ const MainCard = () => {
               <RewardDiv>
                 <TastTxt>Reward</TastTxt>
                 <GiftDiv>
-                  <img src="/assets/images/gift.svg" alt="" />
+                  <img src="/assets/images/gift.svg" alt="Gift" />
                   <GiftTxt>iPhone 14 pro</GiftTxt>
                 </GiftDiv>
               </RewardDiv>
               <div>
                 <TastTxt>Task</TastTxt>
                 <GiftDiv>
-                  <img src="/assets/images/insta.svg" alt="" />
+                  <img src="/assets/images/insta.svg" alt="Instagram Icon" />
                   <InsTxt>1000 views</InsTxt>
                 </GiftDiv>
               </div>
@@ -66,7 +66,7 @@ const MainCard = () => {
             </ImageDiv>
             <QrDiv>
               <QrLogo>
-                <img src="/assets/images/qr.svg" alt="" />
+                <img src="/assets/images/qr.svg" alt="Qr Code Image" />
               </QrLogo>
               <QrTxt>To start a challenge scan a QR code with your phone</QrTxt>
             </QrDiv>

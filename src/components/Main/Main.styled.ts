@@ -3,6 +3,8 @@ export const Wrapper = styled.div`
   @media screen and (width > 1300px) {
     display: flex;
     justify-content: end;
+    height: 100vh;
+    align-items: center;
   }
 `;
 
@@ -15,7 +17,7 @@ export const Container = styled.div`
   padding: 16px;
 
   @media screen and (width > 1300px) {
-    width: 1296px;
+    width: 80%;
     padding: 117px 250px 117px 99px;
     margin: 12px 0;
     border-radius: 24px 0px 0px 24px;

@@ -1,26 +1,20 @@
+import Header from "../Header";
+import Img from "../Img";
+import QR from "../QR";
+import Reward from "../Rewards";
+import Text from "../Text";
 import {
   Container,
   SDiv,
   TxtDiv,
   Wrapper,
-  HDiv,
-  LogoDiv,
-  HTxt,
-  SecTxt,
-  Desc,
-  RDiv,
-  RewardDiv,
-  TastTxt,
-  GiftDiv,
-  GiftTxt,
-  InsTxt,
   ImageDiv,
   GradientDiv,
   SBtn,
-  QrDiv,
-  QrLogo,
-  QrTxt,
   DeskImgDiv,
+  RDiv,
+  TxtWrapper,
+  RewardDiv,
 } from "./Main.styled";
 const MainCard = () => {
   return (
@@ -28,35 +22,48 @@ const MainCard = () => {
       <Container>
         <SDiv>
           <TxtDiv>
-            <HDiv>
-              <LogoDiv>
-                <img src="/assets/images/logo.svg" alt="Logo Image" />
-              </LogoDiv>
-              <HTxt>Swimming Pool</HTxt>
-            </HDiv>
-            <SecTxt>
-              Donec dictum tristique porta. Etiam convallis lorem lobortis nulla
-              molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis
-              elit sed
-            </SecTxt>
-            <Desc>
-              Acquire 1,000 views using this filter and receive a voucher code
-              worth $40 for each product" might sound more formal and clear
-            </Desc>
+            <Header text={"Swimming Pool"} />
+            <TxtWrapper>
+              <Text
+                family="Helvetica"
+                size="14px"
+                color="var(--secondaryColor)"
+                bigTxt="16px"
+                fweight={400}
+                text={`
+                Donec dictum tristique porta. Etiam convallis lorem lobortis nulla
+                molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis
+                elit sed
+                `}
+              />
+            </TxtWrapper>
+            <TxtWrapper>
+              <Text
+                family="Helvetica"
+                size="14px"
+                bigTxt="16px"
+                text={`
+                Acquire 1,000 views using this filter and receive a voucher code
+                worth $40 for each product" might sound more formal and clear
+                `}
+              />
+            </TxtWrapper>
             <RDiv>
               <RewardDiv>
-                <TastTxt>Reward</TastTxt>
-                <GiftDiv>
-                  <img src="/assets/images/gift.svg" alt="Gift" />
-                  <GiftTxt>iPhone 14 pro</GiftTxt>
-                </GiftDiv>
+                <Reward
+                  title={"Reward"}
+                  imgSrc={"/assets/images/gift.svg"}
+                  altTxt={"Gift"}
+                  rewardTxt={"iPhone 14 Pro"}
+                />
               </RewardDiv>
               <div>
-                <TastTxt>Task</TastTxt>
-                <GiftDiv>
-                  <img src="/assets/images/insta.svg" alt="Instagram Icon" />
-                  <InsTxt>1000 views</InsTxt>
-                </GiftDiv>
+                <Reward
+                  title={"Task"}
+                  imgSrc={"/assets/images/insta.svg"}
+                  altTxt={"Insta Photo"}
+                  rewardTxt={"10 000 views"}
+                />
               </div>
             </RDiv>
             <ImageDiv>
@@ -64,14 +71,15 @@ const MainCard = () => {
                 <SBtn>Start challenge</SBtn>
               </GradientDiv>
             </ImageDiv>
-            <QrDiv>
-              <QrLogo>
-                <img src="/assets/images/qr.svg" alt="Qr Code Image" />
-              </QrLogo>
-              <QrTxt>To start a challenge scan a QR code with your phone</QrTxt>
-            </QrDiv>
+            <QR />
           </TxtDiv>
-          <DeskImgDiv></DeskImgDiv>
+          <DeskImgDiv>
+            <Img
+              src="/assets/images/DsktImg.svg"
+              radius="10px"
+              altTxt="Desktop Image"
+            />
+          </DeskImgDiv>
         </SDiv>
       </Container>
     </Wrapper>

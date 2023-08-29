@@ -45,35 +45,13 @@ export const LogoDiv = styled.div`
   }
 `;
 
-export const HTxt = styled.h2`
-  color: white;
-  font-family: "Helvetica";
-  font-size: 20px;
-  @media screen and (width > 1300px) {
-    font-size: 16px;
-  }
-`;
-
-export const SecTxt = styled.p`
-  font-family: "Helvetica";
-  line-height: 18px;
-  font-size: 14px;
-  color: var(--secondaryColor);
+export const TxtWrapper = styled.div`
   margin-top: 24px;
   @media screen and (width > 1300px) {
     margin-top: 30px;
-    font-size: 16px;
   }
 `;
 
-export const Desc = styled(SecTxt)`
-  color: var(--white);
-  margin-top: 14px;
-  @media screen and (width > 1300px) {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-`;
 export const TastTxt = styled.p`
   font-family: "Helvetica";
   color: var(--white);
@@ -97,20 +75,9 @@ export const RewardDiv = styled.div`
   }
 `;
 
-export const GiftTxt = styled.h3`
-  font-family: "Nekst";
-  font-size: 24px;
-  color: var(--white);
-`;
 export const GiftDiv = styled(FlexDiv)`
   gap: 10px;
   align-items: center;
-`;
-
-export const InsTxt = styled.h4`
-  font-family: "Helvetica";
-  font-size: 14px;
-  color: var(--white);
 `;
 
 export const ImageDiv = styled.div`
@@ -163,10 +130,10 @@ export const SDiv = styled.div`
 `;
 
 export const DeskImgDiv = styled.div`
+  display: none;
   @media screen and (width > 1300px) {
+    display: flex;
     width: 360px;
-    background-image: url("/assets/images/DsktImg.svg");
-    border-radius: 10px;
     height: 600px;
   }
 `;
@@ -195,11 +162,4 @@ export const QrLogo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-export const QrTxt = styled.h4`
-  color: var(--white);
-  font-family: "Helvetica";
-  font-size: 14px;
-  line-height: 18px;
 `;
